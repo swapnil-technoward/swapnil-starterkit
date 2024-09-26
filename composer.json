@@ -2,7 +2,7 @@
     "name": "swapnil-technoward/starter-kit",
     "type": "library",
     "description": "Authentication for Laravel",
-    "keywords": ["library"],
+    "keywords": ["library", "laravel", "authentication"],
     "license": "MIT",
     "authors": [
         {
@@ -13,8 +13,7 @@
     ],
     "require": {
         "php": "^7.3|^8.0",
-        "illuminate/support": "^8.0|^9.0|^10.0",
-        "swapnil/starter-kit": "dev-main"
+        "illuminate/support": "^8.0|^9.0|^10.0"
     },
     "autoload": {
         "psr-4": {
@@ -28,7 +27,7 @@
             ]
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "optimize-autoloader": true,
@@ -46,7 +45,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/swapnil-technoward/swapnil/starter-kit"
+            "url": "https://github.com/swapnil-technoward/swapnil-starterkit"
         }
     ]
 }
