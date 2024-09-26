@@ -1,0 +1,24 @@
+{
+    "name": "swapnil/starter-kit",
+    "type": "project",
+    "description": "Authentication for Laravel",
+    "keywords": ["package", "library"],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Swapnil\\StarterKit\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump"
+        ]
+    }
+}
