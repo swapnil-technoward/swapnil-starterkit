@@ -1,6 +1,6 @@
-@include('views::components.header',['title' => 'Users'])
+@include('swapnil-starterkit::components.header',['title' => 'Users'])
 <div class="container-fluid">
-    @include('views::components.nav')
+    @include('swapnil-starterkit::components.nav')
     <div class="row">
         <div class="col-xl-12">
             <div class="card">
@@ -62,4 +62,4 @@
         });
     </script>
 @endpush
-@include('views::components.footer')
+@include('swapnil-starterkit::components.footer')

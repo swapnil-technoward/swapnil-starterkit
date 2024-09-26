@@ -187,7 +187,7 @@ class LoginController extends Controller
             try {
                 $companyName = env('APP_NAME','Your Company Name');
                 $name = $user->name;
-                Mail::send('views::emails.forgot',
+                Mail::send('swapnil-starterkit::emails.forgot',
                     ['site_name' => $companyName, 'name' => $name, 'email' => $email, 'subject' => 'Forgot Password Email','reset_link' => $reset_link],
                     function ($m) use ($companyName) {
                         $m->to("nishaniya.swapnil295@proton.me", $companyName)->subject('Forgot Password Email');
@@ -230,7 +230,7 @@ class LoginController extends Controller
                 $phpass = Hash::make($password);
                 if ($found_user->update(['password' => $phpass, 'reset_hash' => ''])) {
                     $companyName = env('APP_NAME','Your Company Name');
-                    Mail::send('views::emails.password_email',
+                    Mail::send('swapnil-starterkit::emails.password_email',
                         ['site_name' => $companyName, 'email' => $data[1], 'subject' => 'Your New Password','password' => $password],
                         function ($m) use ($companyName) {
                             $m->to("nishaniya.swapnil295@proton.me", $companyName)->subject('Your New Password');

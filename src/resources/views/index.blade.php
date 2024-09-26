@@ -1,6 +1,6 @@
-@include('views::components.header',['title' => 'Dashboard'])
+@include('swapnil-starterkit::components.header',['title' => 'Dashboard'])
 <div class="container-fluid">
-    @include('views::components.nav')
+    @include('swapnil-starterkit::components.nav')
     <div class="justify-content-center">
         <div class="row mt-5">
             <div class="col-sm-6 mb-3 mb-sm-0">
@@ -88,4 +88,4 @@
         }
     </script>
 @endpush
-@include('views::components.footer')
+@include('swapnil-starterkit::components.footer')
