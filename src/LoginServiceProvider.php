@@ -39,7 +39,7 @@ class LoginServiceProvider extends ServiceProvider
         ], 'config');
 
         // Publish views
-        $viewsDirectory = __DIR__.'/resources/views';
+        $viewsDirectory = __DIR__ . '/resources/views';
         $this->publishes([
             $viewsDirectory => resource_path('views/vendor/swapnil-starterkit')
         ], 'views');
