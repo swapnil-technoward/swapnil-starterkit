@@ -1,4 +1,4 @@
-@include('starter-kit::components.sidebar')
+@include('swapnil-starterkit::components.sidebar')
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
