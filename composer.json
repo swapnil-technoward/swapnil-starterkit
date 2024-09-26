@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Swapnil\\StarterKit\\": "starterkit/src/"
+            "Swapnil\\StarterKit\\": "src/"
         }
     },
     "extra": {
