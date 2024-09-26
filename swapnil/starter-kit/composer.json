@@ -41,5 +41,11 @@
         "post-install-cmd": [
             "@php artisan vendor:publish --provider=\"Swapnil\\StarterKit\\LoginServiceProvider\""
         ]
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/swapnil-technoward/swapnil-starterkit"
+        }
+    ]
 }
