@@ -30,6 +30,8 @@ Route::group(['middleware' => ['web']], function () {
     Route::group(['middleware' => ['starter.kit']], function () {
         Route::get('/dashboard', [HomeController::class,'index'])->name('dashboard');
         Route::get('/users', [HomeController::class,'users'])->name('users');
+        Route::get('/profile/{id?}', [HomeController::class,'profile'])->name('profile');
+        Route::post('/update-profile/{id?}', [HomeController::class,'updateProfile'])->name('updateProfile');
         Route::get('/delete/user/{id}', [HomeController::class,'delete_user'])->name('delete_user');
         Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
     });

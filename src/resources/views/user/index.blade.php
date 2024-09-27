@@ -13,14 +13,14 @@
                             <div class="col-lg-2">
                                 <div class="card h-100">
                                     <img
-                                        src="https://png.pngtree.com/png-vector/20240813/ourlarge/pngtree-vector-add-user-icon-png-image_13468811.png"
-                                        height="150px" class="card-img-top rounded" alt="...">
+                                            src="https://png.pngtree.com/png-vector/20240813/ourlarge/pngtree-vector-add-user-icon-png-image_13468811.png"
+                                            height="150px" class="card-img-top rounded" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">{{ $user->name }}</h5>
                                         <p class="card-text">{{ $user->email }}</p>
                                     </div>
                                     <div class="card-footer">
-                                        <a href="#" class="btn btn-primary">Profile</a>
+                                        <a href="{{ route('profile',['id' => $user->id]) }}" class="btn btn-primary">Profile</a>
                                         <a data-id="{{$user->id}}" id="deleteUser" class="btn btn-danger">Delete</a>
                                     </div>
                                 </div>
